@@ -36,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
     final confirm = _confirmPasswordController.text.trim();
 
     // FIX : validation du format email avant envoi à Firebase
-    final emailRegex = RegExp(r'^[\w\.-]+@[\w\.-]+\.\w{2,}$');
+    final emailRegex = RegExp(r'^[\w.-]+@[\w.-]+\.\w{2,}$');
     if (!emailRegex.hasMatch(email)) {
       _showSnackBar("Veuillez entrer une adresse email valide.", Colors.orange);
       return;

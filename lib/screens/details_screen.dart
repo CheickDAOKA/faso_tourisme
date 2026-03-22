@@ -91,7 +91,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           end: Alignment.bottomCenter,
                           colors: [
                             Colors.transparent,
-                            Colors.black.withOpacity(0.85),
+                            Colors.black.withValues(alpha:0.85),
                           ],
                         ),
                       ),
@@ -142,14 +142,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 ),
                 onPressed: _toggleFavorite,
                 style: IconButton.styleFrom(
-                  backgroundColor: Colors.white.withOpacity(0.25),
+                  backgroundColor: Colors.white.withValues(alpha:0.25),
                 ),
               ),
               IconButton(
                 icon: const Icon(Icons.share),
                 onPressed: () {},
                 style: IconButton.styleFrom(
-                  backgroundColor: Colors.white.withOpacity(0.25),
+                  backgroundColor: Colors.white.withValues(alpha:0.25),
                 ),
               ),
               const SizedBox(width: 8),
@@ -248,7 +248,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                               ),
                             ),
                             backgroundColor:
-                            const Color(0xFF009E49).withOpacity(0.05),
+                            const Color(0xFF009E49).withValues(alpha:0.05),
                             side: BorderSide.none,
                           ))
                               .toList(),
@@ -272,7 +272,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: 0.05),
               blurRadius: 20,
               offset: const Offset(0, -10),
             ),

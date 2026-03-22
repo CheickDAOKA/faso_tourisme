@@ -26,7 +26,7 @@ class WelcomePage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.transparent, Colors.black.withOpacity(0.8)],
+                colors: [Colors.transparent, Colors.black.withValues(alpha: 0.8)],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 stops: const [0.5, 1.0],
@@ -66,7 +66,7 @@ class WelcomePage extends StatelessWidget {
                           "La destination authentique à ne pas manquer.",
                           textAlign: TextAlign.center,
                           style: GoogleFonts.poppins(
-                            color: Colors.white.withOpacity(0.8),
+                            color: Colors.white.withValues(alpha: 0.8),
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
                           ),
