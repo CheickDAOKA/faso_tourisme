@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430764301843",
+    "project_id": "faso-tourisme",
+    "storage_bucket": "faso-tourisme.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430764301843:android:bac3099288695d320569e6",
+        "android_client_info": {
+          "package_name": "com.example.faso_tourisme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430764301843-u0v3cg182rsp552d79b91sv3qvulpt15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnKpx1MlfBC77IF7uhlCGeVqGXsUQaTOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430764301843-u0v3cg182rsp552d79b91sv3qvulpt15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
