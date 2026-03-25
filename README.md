@@ -53,19 +53,13 @@ L'application utilise des images locales. Vérifiez que le dossier assets/images
 4. Lancer l'applicationCompilez et lancez le projet sur votre émulateur ou votre téléphone :
    flutter run
 
-📂 Structure du Projet:
-lib/
-├── models/          # Classes de données (Hotel, Place, User, etc.)
-├── screens/         # Les pages complètes de l'application
-│   ├── auth/        # Connexion, Inscription, Oubli de mot de passe
-│   ├── home/        # Page d'accueil et tableaux de bord
-│   └── details/     # Pages de détails pour les sites et hôtels
-├── services/        # Logique métier et appels aux données (Mock/API)
-├── theme/           # Configuration globale des couleurs et styles (AppTheme)
-├── utils/           # Fonctions d'aide, constantes et validateurs
-├── widgets/         # Composants UI réutilisables (Cards, Buttons, Inputs)
-└── main.dart        # Point d'entrée de l'application
--
+### 📂 Détails de l'organisation :
+
+- **Models** : Contient les classes de données (ex: `Hotel`, `Place`). Cela définit comment les informations sont structurées.
+- **Screens** : Regroupe les interfaces utilisateur complètes (Accueil, Détails, Authentification).
+- **Widgets** : Contient les composants réutilisables comme `HotelCard` ou `CustomButton` pour éviter de répéter du code.
+- **Services** : Gère la logique de récupération des données (pour l'instant des données simulées/mockées).
+- **Theme** : Centralise les couleurs, les polices et les styles pour garantir une cohérence visuelle.
 ⭐ N'hésitez pas à mettre une étoile au projet si vous l'aimez !
 
 
