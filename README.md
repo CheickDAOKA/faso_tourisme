@@ -11,6 +11,7 @@
 - 🏨 **Gestion des Hôtels** : Visualisez les meilleurs hôtels, leurs tarifs par nuit, leur disponibilité et leurs notes.
 - 🎨 **Interface Moderne** : Design épuré avec des composants réutilisables (Cards, Badges, Thèmes personnalisés).
 - 🖼️ **Images avec Cache** : Utilisation de `cached_network_image` pour une expérience fluide et une économie de données.
+- 🌗 **Support du Mode Sombre** : Thème complet adapté à vos préférences visuelles.
 
 ---
 
@@ -52,12 +53,19 @@ L'application utilise des images locales. Vérifiez que le dossier assets/images
 4. Lancer l'applicationCompilez et lancez le projet sur votre émulateur ou votre téléphone :
    flutter run
 
-### 📂 Détails de l'organisation :
-
-- **Models** : Contient les classes de données (ex: `Hotel`, `Place`). Cela définit comment les informations sont structurées.
-- **Screens** : Regroupe les interfaces utilisateur complètes (Accueil, Détails, Authentification).
-- **Widgets** : Contient les composants réutilisables comme `HotelCard` ou `CustomButton` pour éviter de répéter du code.
-- **Services** : Gère la logique de récupération des données (pour l'instant des données simulées/mockées).
+📂 Structure du Projet:
+lib/
+├── models/          # Classes de données (Hotel, Place, User, etc.)
+├── screens/         # Les pages complètes de l'application
+│   ├── auth/        # Connexion, Inscription, Oubli de mot de passe
+│   ├── home/        # Page d'accueil et tableaux de bord
+│   └── details/     # Pages de détails pour les sites et hôtels
+├── services/        # Logique métier et appels aux données (Mock/API)
+├── theme/           # Configuration globale des couleurs et styles (AppTheme)
+├── utils/           # Fonctions d'aide, constantes et validateurs
+├── widgets/         # Composants UI réutilisables (Cards, Buttons, Inputs)
+└── main.dart        # Point d'entrée de l'application
+-
 ⭐ N'hésitez pas à mettre une étoile au projet si vous l'aimez !
 
 
